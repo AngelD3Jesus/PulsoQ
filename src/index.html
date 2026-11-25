@@ -5,21 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PulsoQ</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             background-color: #f4f8fb;
-            padding: 50px;
+            text-align: center;
+            margin: 0;
+            padding: 30px;
+            color: #333;
         }
 
-        h1 {
+        h1, h2 {
             color: #0077b6;
         }
 
         p {
-            font-size: 18px;
+            font-size: 17px;
             line-height: 1.6;
+        }
+
+        .banner {
+            background-color: #0077b6;
+            color: white;
+            padding: 35px;
+            border-radius: 12px;
+            margin: 25px auto;
+            max-width: 750px;
+        }
+
+        .banner h2 {
+            color: white;
+        }
+
+        .beneficios {
+            max-width: 700px;
+            margin: 20px auto;
+            text-align: left;
+        }
+
+        .beneficios li {
+            margin: 15px 0;
+            font-size: 17px;
         }
 
         .mensaje {
@@ -28,21 +55,67 @@
         }
     </style>
 </head>
+
 <body>
 
     <h1>PulsoQ - Porque cada segundo cuenta</h1>
 
     <h2>¿Qué es PulsoQ?</h2>
-
     <p>
-        PulsoQ es un sistema de triage digital que permite
-        registrar pacientes mediante códigos QR, clasificarlos
-        según su gravedad utilizando la escala Manchester
-        y consultar sus turnos en tiempo real.
+        PulsoQ es una aplicación web que permite registrar
+        pacientes mediante códigos QR, asignar prioridades
+        con la escala Manchester y visualizar turnos
+        en tiempo real.
     </p>
 
-    <h2>¡Conoce PulsoQ!</h2>
+    <!-- Banner del proyecto -->
+    <div class="banner">
+        <svg width="220" height="70" viewBox="0 0 220 70">
+            <polyline
+                points="0,35 65,35 85,15 105,60 125,5 145,35 220,35"
+                fill="none"
+                stroke="white"
+                stroke-width="4"
+            />
+        </svg>
 
+        <h2>Atención médica más organizada</h2>
+        <p>Innovación para el área de urgencias</p>
+    </div>
+
+    <!-- Utilidad del sistema -->
+    <h2>¿Por qué utilizar PulsoQ?</h2>
+    <p>
+        En urgencias, una buena organización es fundamental.
+        PulsoQ ayuda a reducir la confusión en los turnos,
+        facilita el registro de pacientes y permite
+        priorizar la atención según su gravedad.
+    </p>
+
+    <!-- Beneficios -->
+    <h2>Beneficios de PulsoQ</h2>
+
+    <ul class="beneficios">
+        <li>
+            <strong>Registro rápido:</strong>
+            Los pacientes pueden registrar sus datos
+            mediante un código QR.
+        </li>
+
+        <li>
+            <strong>Atención por prioridad:</strong>
+            Permite organizar a los pacientes según
+            la gravedad de su condición.
+        </li>
+
+        <li>
+            <strong>Información en tiempo real:</strong>
+            Los pacientes y familiares pueden consultar
+            el estado de sus turnos.
+        </li>
+    </ul>
+
+    <h2>¡Conoce PulsoQ!</h2>
     <p class="mensaje">
         Descubre una forma más rápida y organizada
         de gestionar la atención en urgencias médicas.
