@@ -4,34 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PulsoQ</title>
+    <title>PulsoQ - Triage Digital</title>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f8fb;
-            text-align: center;
-            margin: 0;
-            padding: 30px;
-            color: #333;
+        * {
+            box-sizing: border-box;
         }
 
-        h1, h2 {
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f8fb;
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            background-color: #0077b6;
+            color: white;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
             color: #0077b6;
+        }
+
+        section {
+            padding: 35px 20px;
+            max-width: 900px;
+            margin: auto;
         }
 
         p {
             font-size: 17px;
-            line-height: 1.6;
+            line-height: 1.7;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #00a6a6;
+            color: white;
+            padding: 14px 28px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .boton:hover {
+            background-color: #008888;
         }
 
         .banner {
             background-color: #0077b6;
-            color: white;
-            padding: 35px;
+            padding: 30px;
             border-radius: 12px;
-            margin: 25px auto;
-            max-width: 750px;
+            color: white;
         }
 
         .banner h2 {
@@ -39,87 +76,166 @@
         }
 
         .beneficios {
-            max-width: 700px;
-            margin: 20px auto;
-            text-align: left;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 25px;
         }
 
-        .beneficios li {
-            margin: 15px 0;
-            font-size: 17px;
+        .tarjeta {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            width: 240px;
+            box-shadow: 0 3px 10px #00000015;
         }
 
-        .mensaje {
+        .tarjeta h3 {
             color: #0077b6;
-            font-weight: bold;
+        }
+
+        .contacto {
+            background-color: #e3f2fd;
+            max-width: 100%;
+        }
+
+        footer {
+            background-color: #005b8c;
+            color: white;
+            padding: 20px;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>PulsoQ - Porque cada segundo cuenta</h1>
+    <!-- Inicio -->
+    <header>
+        <h1>PulsoQ</h1>
+        <h2 style="color: white;">
+            Porque cada segundo cuenta
+        </h2>
+        <p>
+            Una solución digital para mejorar la
+            organización en urgencias médicas.
+        </p>
 
-    <h2>¿Qué es PulsoQ?</h2>
-    <p>
-        PulsoQ es una aplicación web que permite registrar
-        pacientes mediante códigos QR, asignar prioridades
-        con la escala Manchester y visualizar turnos
-        en tiempo real.
-    </p>
+        <a href="#informacion" class="boton">
+            Conoce más
+        </a>
+    </header>
 
-    <!-- Banner del proyecto -->
-    <div class="banner">
-        <svg width="220" height="70" viewBox="0 0 220 70">
-            <polyline
-                points="0,35 65,35 85,15 105,60 125,5 145,35 220,35"
-                fill="none"
-                stroke="white"
-                stroke-width="4"
-            />
-        </svg>
+    <!-- Descripción -->
+    <section id="informacion">
+        <h2>¿Qué es PulsoQ?</h2>
+        <p>
+            PulsoQ es una aplicación web diseñada
+            para gestionar el triage en urgencias.
+            Permite registrar pacientes mediante códigos QR,
+            asignar prioridades utilizando la escala
+            Manchester y visualizar turnos en tiempo real.
+        </p>
+    </section>
 
-        <h2>Atención médica más organizada</h2>
-        <p>Innovación para el área de urgencias</p>
-    </div>
+    <!-- Banner -->
+    <section>
+        <div class="banner">
+            <svg width="220" height="70" viewBox="0 0 220 70"
+                 role="img" aria-label="Línea de pulso cardiaco">
+                <polyline
+                    points="0,35 65,35 85,15 105,60 125,5 145,35 220,35"
+                    fill="none"
+                    stroke="white"
+                    stroke-width="4"
+                />
+            </svg>
 
-    <!-- Utilidad del sistema -->
-    <h2>¿Por qué utilizar PulsoQ?</h2>
-    <p>
-        En urgencias, una buena organización es fundamental.
-        PulsoQ ayuda a reducir la confusión en los turnos,
-        facilita el registro de pacientes y permite
-        priorizar la atención según su gravedad.
-    </p>
+            <h2>Atención médica más organizada</h2>
+            <p>
+                Tecnología para facilitar la gestión
+                de pacientes en urgencias.
+            </p>
+        </div>
+    </section>
+
+    <!-- Utilidad -->
+    <section>
+        <h2>¿Por qué utilizar PulsoQ?</h2>
+        <p>
+            En urgencias, organizar correctamente
+            a los pacientes es fundamental.
+            PulsoQ facilita su registro, ayuda al
+            personal médico a gestionar prioridades
+            y mantiene informados a los pacientes
+            y sus familiares.
+        </p>
+    </section>
 
     <!-- Beneficios -->
-    <h2>Beneficios de PulsoQ</h2>
+    <section>
+        <h2>Beneficios de PulsoQ</h2>
 
-    <ul class="beneficios">
-        <li>
-            <strong>Registro rápido:</strong>
-            Los pacientes pueden registrar sus datos
-            mediante un código QR.
-        </li>
+        <div class="beneficios">
 
-        <li>
-            <strong>Atención por prioridad:</strong>
-            Permite organizar a los pacientes según
-            la gravedad de su condición.
-        </li>
+            <div class="tarjeta">
+                <h3>Registro rápido</h3>
+                <p>
+                    Los pacientes pueden registrar
+                    sus datos mediante un código QR.
+                </p>
+            </div>
 
-        <li>
-            <strong>Información en tiempo real:</strong>
-            Los pacientes y familiares pueden consultar
-            el estado de sus turnos.
-        </li>
-    </ul>
+            <div class="tarjeta">
+                <h3>Atención por prioridad</h3>
+                <p>
+                    Permite organizar los turnos
+                    según la gravedad del paciente.
+                </p>
+            </div>
 
-    <h2>¡Conoce PulsoQ!</h2>
-    <p class="mensaje">
-        Descubre una forma más rápida y organizada
-        de gestionar la atención en urgencias médicas.
-    </p>
+            <div class="tarjeta">
+                <h3>Información en tiempo real</h3>
+                <p>
+                    Los pacientes y familiares
+                    pueden consultar sus turnos.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Invitación -->
+    <section>
+        <h2>¡Conoce PulsoQ!</h2>
+        <p>
+            Descubre una manera más rápida y organizada
+            de gestionar la atención en urgencias.
+        </p>
+
+        <a href="#contacto" class="boton">
+            Comienza ahora
+        </a>
+    </section>
+
+    <!-- Contacto ficticio -->
+    <section class="contacto" id="contacto">
+        <h2>Contáctanos</h2>
+        <p>
+            ¿Quieres conocer más sobre PulsoQ?
+            Comunícate con nuestro equipo.
+        </p>
+
+        <p><strong>Correo:</strong> contacto@pulsoq.example</p>
+        <p><strong>Teléfono:</strong> (618) 555-0100</p>
+        <p><strong>Ubicación:</strong> Durango, México</p>
+        <p><em>Datos de contacto ficticios para demostración.</em></p>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>© 2026 PulsoQ - Proyecto académico</p>
+    </footer>
 
 </body>
 </html>
